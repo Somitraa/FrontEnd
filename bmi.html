@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>BMI CALCULATOR</title>
+        <style>
+            html,body{
+            padding: 0%;
+            margin: 0%;
+            height: 100%;
+        }
+        .container{
+            background: rgb(47, 76, 51);
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            background: rgb(212, 251, 178);
+            padding: 20px 100px;
+            border-radius: 20px;
+            text-align: center;
+
+        }
+        h2{
+            color: rgb(47, 76, 51);
+
+        }
+        input{
+             /* background-color: rgb(47, 76, 51);
+            color: rgb(212, 251, 178);  */
+            border-radius: 5px;
+        }
+        button{
+            background-color: rgb(47, 76, 51);
+                padding:  10px 50px;
+                border-radius: 20px;
+                color: rgb(212, 251, 178);
+
+        }
+        button:hover{
+            background-color: rgb(212, 251, 178);
+            color: rgb(47, 76, 51);
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <h2>BMI CALCULATE</h2>
+        Age <input type="number" id="age" placeholder="Enter Your Age"><br><br>
+        Height(in meters) <input type="number" id="hei" placeholder="Enter Your Height"><br><br>
+        Weight(in kg) <input type="number" id="wgt" placeholder="Enter Your Weight"><br><br>
+        Gender <input type="radio" name="gen">Male
+        <input type="radio" name="gen">female <br><hr>
+        <button onclick="rst()">Calculate</button>
+            </div>
+        </div>
+        <script>
+            function rst(){
+                const height=parseInt(document.getElementById("hei").value);
+                const Weight=parseInt(document.getElementById("wgt").value);
+                const bmi=(Weight/(height*height));
+
+                if(bmi < 16){
+                    alert('Severe Thinness');
+                }
+                else if(bmi >=18.5 && bmi<=25){
+                    alert('Normal');
+                }
+                else if(bmi > 26){
+                    alert('Over Weight');
+                }
+                
+                else {
+                    alert('Obese');
+                }
+            }
+        </script>
+    </body>
+</html>
