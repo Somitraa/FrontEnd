@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Pookie</title>
+        <link rel="icon" href="download.jpg">
+    </head>
+    <style>
+        body,html{
+            margin: 0%;
+            padding: 0%;
+            height: 100%;
+        }
+        .container{
+            background-color: pink;
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: whitesmoke;
+            text-align: center;
+            padding: 20px 40px;
+            border-radius: 20px;
+
+        }
+        button{
+            background-color: pink;
+            padding:  5px 20px;
+            border-radius: 10px;
+
+        }
+        button:hover{
+            background-color: aliceblue;
+
+        }
+    </style>
+    <body >
+        <div class="container">
+            <div class="box">
+                <h2 style="font-family: Arial, Helvetica, sans-serif;">Calculator Lite</h2>
+        
+        Int 1  : <input type="number" id="num1"> <br><br>
+        Int 2  : <input type="number" id="num2"> <br><br><hr>
+
+         
+        <button onclick="add()">Addition </button>
+        <button onclick="sub()">Substraction </button>
+        <button onclick="mul()">Multiplication </button>
+        <button onclick="div()">Division </button>
+        <button onclick="clr()">Clear </button>
+            </div>
+        </div>
+
+        <script>
+            function add(){
+                const a=parseInt(document.getElementById('num1').value);      
+                const b=parseInt(document.getElementById('num2').value);     
+                
+                const sum = a+b;
+                alert("the sum is : "+ sum);
+            
+            }
+            function sub(){
+                const a=parseInt(document.getElementById('num1').value);      
+                const b=parseInt(document.getElementById('num2').value);      
+                
+                const sub = a-b;
+                alert("the sub is : "+ sub);
+            
+            }
+            function mul(){
+                const a=parseInt(document.getElementById('num1').value);      
+                const b=parseInt(document.getElementById('num2').value);      
+                
+                const mul = a * b;
+                alert("the mul is : "+ mul);
+            
+            }
+            function div(){
+                const a=parseInt(document.getElementById('num1').value);      
+                const b=parseInt(document.getElementById('num2').value);      
+                
+                const div = a / b;
+                alert("the div is : "+ div);
+            
+            }
+            function clr(){
+                document.getElementById('num1').value=0;      
+                document.getElementById('num2').value=0;      
+                
+            }
+            
+        </script>
+    </body>
+</html>
