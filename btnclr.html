@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> document</title>
+   <style>
+    body,html{
+      margin: 0;
+      padding: 0;
+      height: 100%;
+
+    }
+    .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      border-radius: 20px;
+      padding: 20px;
+      gap: 10px;
+    }
+    button{
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    
+    }
+    .blue{
+      background-color: blue;
+    }
+    .red{
+      background-color: red;
+
+    }
+    .green{
+      background-color: green;
+    }
+
+    .yellow{
+      background-color: yellow;
+    }
+    .white{
+      background-color: white;
+      color: black;
+    }
+    .purple{
+      background-color: purple;
+    }
+    .black{
+      background-color: black;
+    }
+    button:hover{
+      transform: scale(1.2);
+    }
+   </style>
+  </head>
+  <body>
+    <div class="container">
+         <button class="blue" onclick="change('blue')">blue</button>
+         <button class="red" onclick="change('red')">red</button>
+         <button class="green" onclick="change('green')">green</button>
+         <button  class="yellow" onclick="change('yellow')">yellow</button>
+         <button class="white" onclick="change('white')"> white</button>
+         <button class="purple" onclick="change('purple')">purple</button>
+         <button class="black" onclick="change('black')">black</button>
+      </div>
+  </div>
+  <script>
+    function change(color){
+        document.body.style.backgroundColor= color;
+    
+        // document.body.style.backgroundColor= blue;
+    
+        // document.body.style.backgroundColor= yellow;
+    
+        // document.body.style.backgroundColor= black;
+   
+        // document.body.style.backgroundColor= purpule;
+    
+        // document.body.style.backgroundColor= white;
+    }
+
+</script>
+    
+  </body>
+</html>
