@@ -45,8 +45,7 @@ This repository is open-source and available under the MIT License.
 
 👤 Author
 Somitra Gupta
-📧 somitra@example.com
-🌐 somitra.dev
+📧 guptasomitra@gmail.com
 
 🔗 Acknowledgments
 Inspired by various frontend challenges and tutorials.
